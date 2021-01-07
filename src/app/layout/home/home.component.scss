@@ -1,0 +1,84 @@
+.stories{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .storyHdr{
+      width: 100px;
+      height: 100px;
+      margin: -50px 0 0 50px;
+      border-radius: 250px;
+      font-size: 18px;
+      color: #fff;
+      line-height: 100px;
+      text-align: center;
+      background: #D82A4F;
+    }
+    .imageSlider{
+        min-height: 60%;
+        background: #EEF4F6;
+    }
+}
+
+:host ::ng-deep .item{
+    opacity:0.4;
+    transition:.4s ease all;
+    
+    transform:scale(0.9);
+  }
+  @media(max-width:1000px){
+    .item{margin:0; transform:scale(.9)}
+  }
+ :host ::ng-deep .active .item{
+    opacity:1;
+    transform:scale(1);
+  } 
+  
+ .imageContent{
+  max-width: 500px;
+  margin: auto;
+ }
+
+  .eventInfo{
+      p{
+        margin: 0;
+      }
+  }
+  
+  :host ::ng-deep .owl-dot{
+      display: none!important;
+  }
+
+  .slide-img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .training{
+      h3{
+        text-align: center;
+        position: relative;
+        padding-bottom: 13px;
+      }
+      h3::after{
+        display: block;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 295px;
+        height: 4px;
+        bottom: 0px;
+        content: '';
+        background: #D82A4F;
+        align-items: center;
+        justify-content: center;
+      }
+  }
+
+  .training{
+    height: 80vh;
+  }
