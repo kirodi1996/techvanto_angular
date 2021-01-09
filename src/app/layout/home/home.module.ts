@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LayoutRoutingModule } from './layout-routing.module';
-import { HomeComponent } from './home/home.component'
+
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -14,8 +13,6 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatMenuModule} from '@angular/material/menu';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { HeaderComponent } from './header/header.component';
-import { LayoutComponent } from './layout.component';
 
 @NgModule({
   imports: [MatCheckboxModule, MatSidenavModule,MatDividerModule,
@@ -32,15 +29,14 @@ export class MaterialModule {
 
 
 @NgModule({
-  declarations: [ HomeComponent,HeaderComponent,LayoutComponent],
+  declarations: [ ],
   imports: [
     CommonModule,
     CarouselModule,
-    LayoutRoutingModule,
     MaterialModule
   ]
 })
-export class LayoutModule { }
+export class HomeModule { }
 
 
 

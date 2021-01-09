@@ -81,4 +81,16 @@
 
   .training{
     height: 80vh;
+
+    mat-expansion-panel{
+    
+      padding: 50px 10px 10px 10px;
+    }
+    mat-accordion{
+      
+      height: 450px;
+    }
+    img{
+      width: 35px;
+    }
   }
