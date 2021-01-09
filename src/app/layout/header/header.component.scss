@@ -32,6 +32,7 @@
   z-index: 1; 
   background-color: #fff;
   height: 100%;
+  
 } 
 
 
@@ -831,10 +832,6 @@
   flex-flow: row; 
   justify-content: center; 
   align-items: center;
-
-   
-
-
   p{
     margin: 0.6rem 0;
   }
@@ -843,9 +840,12 @@
 
 .mainheader { 
  
-  width: 100%; 
-  flex-direction: row;
-  height: 100%;
+  position: absolute;
+    top: 65px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow-y: auto;
   .naview { 
     display: flex;
     flex-direction: row;
@@ -916,4 +916,17 @@ mat-sidenav {
 }
 .imgview{
   background-color: #fff;
+}
+
+
+mat-drawer-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+mat-drawer {
+  position: fixed;
+  background-color: rgb(236, 236, 236);
 }
