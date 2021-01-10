@@ -49,10 +49,11 @@
     <h3>Training Program</h3>
 
     <div class="expansion-panel" fxLayout="column" fxLayout='row wrap' fxLayoutAlign='space-around'>
-       
-        <mat-accordion fxFlex="20%"  fxFlex.lt-md='40%' fxFlex.lt-sm="100%" >
-            <mat-expansion-panel [ngStyle]="{'background-color': expanded ?'#D82A4F':'#000'}" disabled hideToggle [expanded]='expanded'>
-                <mat-expansion-panel-header  collapsedHeight="auto" expandedHeight="auto">
+
+        <mat-accordion fxFlex="20%" fxFlex.lt-md='40%' fxFlex.lt-sm="100%">
+            <mat-expansion-panel [ngStyle]="{'background-color': expanded ?'#D82A4F':'#000'}" disabled hideToggle
+                [expanded]='expanded'>
+                <mat-expansion-panel-header collapsedHeight="auto" expandedHeight="auto">
                     <mat-panel-title>
                         <div fxLayoutAlign='center center' fxLayout='column'>
                             <img *ngIf='!expanded' src='assets/images/book1.png'>
@@ -60,106 +61,271 @@
                                 1:1 Training
                             </span>
                             <span *ngIf='!expanded'>
-                                Learn what you are not learning Learn you 
+                                Learn what you are not learning Learn you
                                 are not learning Learn what you are not
                                 learning in college this. we welcome you to join us.
                             </span>
-                            <span style="cursor: pointer;" mat-button (click)='expanded=!expanded' >
+                            <span style="cursor: pointer;" mat-button (click)='expanded=!expanded'>
                                 <mat-icon *ngIf='!expanded'>keyboard_arrow_down</mat-icon>
-                                
+
                             </span>
                         </div>
-    
+
                     </mat-panel-title>
-                    
+
                 </mat-expansion-panel-header>
                 <p style="color: white;">
-                    Learn what you are not learning Learn you 
+                    Learn what you are not learning Learn you
                     are not learning Learn what you are not
                     learning in college this. we welcome you to join us.
-                    
+
                     I'm visible because I am open</p>
-                <span style="cursor: pointer;" mat-button (click)='expanded=!expanded' >
-                   
-                    <mat-icon *ngIf='expanded'>keyboard_arrow_up</mat-icon> 
-                </span>     
-                
+                <span style="cursor: pointer;" mat-button (click)='expanded=!expanded'>
+
+                    <mat-icon *ngIf='expanded'>keyboard_arrow_up</mat-icon>
+                </span>
+
             </mat-expansion-panel>
             <button>Know more</button>
 
         </mat-accordion>
-        <mat-accordion fxFlex="20%" fxFlex.lt-md='40%' fxFlex.lt-sm="100%" >
+        <mat-accordion fxFlex="20%" fxFlex.lt-md='40%' fxFlex.lt-sm="100%">
             <mat-expansion-panel disabled hideToggle>
                 <mat-expansion-panel-header collapsedHeight="auto" expandedHeight="auto">
                     <mat-panel-title>
                         <div fxLayoutAlign='center center' fxLayout='column'>
-                            <img  src='assets/images/book1.png'>
+                            <img src='assets/images/book1.png'>
                             <span>
                                 1:1 Training
                             </span>
                             <span>
-                                Learn what you are not learning Learn you 
+                                Learn what you are not learning Learn you
                                 are not learning Learn what you are not
                                 learning in college this. we welcome you to join us.
                             </span>
                         </div>
-    
+
                     </mat-panel-title>
-                  
-    
+
+
                 </mat-expansion-panel-header>
                 <p>I'm visible because I am open</p>
             </mat-expansion-panel>
         </mat-accordion>
-        <mat-accordion  fxFlex="20%" fxFlex.lt-md='40%' fxFlex.lt-sm="100%" >
+        <mat-accordion fxFlex="20%" fxFlex.lt-md='40%' fxFlex.lt-sm="100%">
             <mat-expansion-panel disabled hideToggle>
                 <mat-expansion-panel-header collapsedHeight="auto" expandedHeight="auto">
                     <mat-panel-title>
                         <div fxLayoutAlign='center center' fxLayout='column'>
-                            <img  src='assets/images/book1.png'>
+                            <img src='assets/images/book1.png'>
                             <span>
                                 1:1 Training
                             </span>
                             <span>
-                                Learn what you are not learning Learn you 
+                                Learn what you are not learning Learn you
                                 are not learning Learn what you are not
                                 learning in college this. we welcome you to join us.
                             </span>
                         </div>
-    
+
                     </mat-panel-title>
-                  
-    
+
+
                 </mat-expansion-panel-header>
                 <p>I'm visible because I am open</p>
             </mat-expansion-panel>
         </mat-accordion>
-        <mat-accordion fxFlex="20%" fxFlex.lt-md='40%' fxFlex.lt-sm="100%" >
+        <mat-accordion fxFlex="20%" fxFlex.lt-md='40%' fxFlex.lt-sm="100%">
             <mat-expansion-panel disabled hideToggle>
                 <mat-expansion-panel-header collapsedHeight="auto" expandedHeight="auto">
                     <mat-panel-title>
                         <div fxLayoutAlign='center center' fxLayout='column'>
-                            <img  src='assets/images/book1.png'>
+                            <img src='assets/images/book1.png'>
                             <span>
                                 1:1 Training
                             </span>
                             <span style="text-align: center;">
-                                Learn what you are not learning Learn you 
+                                Learn what you are not learning Learn you
                                 are not learning Learn what you are not
                                 learning in college this. we welcome you to join us.
                             </span>
                         </div>
-    
+
                     </mat-panel-title>
-                  
-    
+
+
                 </mat-expansion-panel-header>
                 <p>I'm visible because I am open</p>
 
             </mat-expansion-panel>
         </mat-accordion>
-       
-       
+
+
     </div>
+
+</section>
+
+<section class="topCourse" fxLayout='column' fxLayoutAlign='center center'>
+    <h3>Top Courses</h3>
+    <p>
+        The courses available here are available for all kind of services ourses available here are available for all
+        kind of services p provided by us. Students are suppose to check subjects before applying for any registration.
+    </p>
+
+
+    <div class="coursedetails" fxLayoutAlign='center center'>
+        <img src="assets/images/topcourseCenter.png" alt="detailsofcourse">
+        <div mat-raised-button class="circle circleIot">IoT</div>
+        <div class="shapecPlus"></div>
+        <div class="shapeIot"></div>
+        <div class="shapeAndroid"></div>
+        <div mat-raised-button class="circle circleMl">Machine Learning</div>
+        <div mat-raised-button class="circle circleCPlus">C++</div>
+        <div mat-raised-button class="circle circleDs">Data Science</div>
+        <div mat-raised-button class="circle circleAndroid">Android Development</div>
+        <div mat-raised-button class="circle circleCs">Cyber Security</div>
+        <!--<div class="circle">AI</div> -->
+    </div>
+    <button class="seeAll" mat-raised-button> See All
+        <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+</section>
+
+<section class="whyUs" fxLayout='column' fxLayoutAlign='center center'>
+    <h3>Why Us?</h3>
+    <div style="width: 100%;">
+        <div fxLayout='row wrap' fxLayoutAlign='space-around'>
+            <div fxFlex='33%' fxLayoutAlign='center center' fxLayout='column'>
+                <img src="assets/images/Vector.png">
+                <h5><span class="textcolor">20+</span></h5>
+                <p>Products and<br>
+                    Projects Delivered</p>
+            </div>
+            <div fxFlow='33%' fxLayoutAlign='center center' fxLayout='column'>
+                <img src="assets/images/Vector (2).png">
+                <h5><span class="textcolor">5000+</span></h5>
+                <p>Community<br>
+                    Members</p>
+            </div>
+            <div fxFlex='33%' fxLayoutAlign='center center' fxLayout='column'>
+                <img src="assets/images/Vector (1).png">
+                <h5><span class="textcolor">30+</span></h5>
+                <p>Exciting <br>Technologies</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="graph" fxLayoutAlign='center center' [ngStyle.lt-md]="{'background-size':'contain'}" [style.background-image]="'url(assets/images/graph.png)'">
+        <div fxLayout="row" fxLayout.lt-md="column" [ngStyle.lt-lg]="{'max-width':'690px'}" [ngStyle.gt-md]="{'max-width':'1000px'}">
+            <div fxFlex='50%'>
+                <p>
+                    What our 
+                </p>
+                <p>
+                    students says about us? 
+                </p>
+            </div>
+           
+            <div fxFlex='50%'>
+                <owl-carousel-o [options]="graphOptions">
+    
+                    <ng-template carouselSlide id="1">
+                        <div >
+                            kjejwq qjwe jwq j eqwjg ewqhj ehwjqg ejwq
+        
+                        </div>
+        
+                    </ng-template>
+        
+        
+                    <ng-template carouselSlide id="2">
+                        <div >
+                            eqwewq uwqeuqw eu wqu euwq wqwqtuqw
+                        </div>
+                    </ng-template>
+        
+        
+                    <ng-template carouselSlide id="3">
+                        <div >
+                          qwewuqyiqy iq qwiq
+                        </div>
+                    </ng-template>
+        
+                </owl-carousel-o>
+            </div>
+
+        </div>
+       
+        
+        
+    </div>
+
+</section>
+
+
+
+
+<section class="topClients" fxLayout='column' fxLayoutAlign='center center'>
+    <h3>Top Clients</h3>
+    <div  fxLayout='row wrap' fxLayoutAlign='space-around'>
+        <div fxFlex="25%" fxLayoutAlign='center center' fxLayout='column' fxFlex.lt-md='33%' fxFlex.lt-sm="100%">
+            <img src="assets/images/Panjab_University100 1.png">
+            <h5><span class="textcolor">Punjab University</span></h5>
+            <p style="margin-left: 10px; font-size: 15px;">Hoshiarpur,Punjab</p>
+        </div>
+        <div fxFlex="25%" fxLayoutAlign='center center' fxLayout='column' fxFlex.lt-md='33%' fxFlex.lt-sm="100%">
+            <img src="assets/images/iimtLogo100 1.png">
+            <h5><span class="textcolor">IIMT University</span></h5>
+            <p style="margin-left: 10px; font-size: 15px;">Greater noida,U.P.</p>
+        </div>
+        <div fxFlex="25%" fxLayoutAlign='center center' fxLayout='column' fxFlex.lt-md='33%' fxFlex.lt-sm="100%">
+            <img src="assets/images/iimtLogo100 1.png">
+            <h5><span class="textcolor">Pinglaksh Anveshnam
+                </span></h5>
+            <p style="margin-left: 10px; font-size: 15px;">Gurugram, Haryana</p>
+        </div>
+        <div fxFlex="25%" fxLayoutAlign='center center' fxLayout='column' fxFlex.lt-md='33%' fxFlex.lt-sm="33%">
+            <img src="assets/images/IITBhuwneswar100 1.png">
+            <h5><span class="textcolor">IIT, Bhuwneshwar
+                </span></h5>
+            <p style="margin-left: 10px; font-size: 15px;"> Bhuwneshwar, Odisha</p>
+        </div>
+        <div fxFlex="25%" fxLayoutAlign='center center' fxLayout='column' fxFlex.lt-md='33%' fxFlex.lt-sm="33%"
+            class=" ctopspacing">
+            <img src="assets/images/Kanpur100 1.png">
+            <h5>
+                <span class="textcolor">IIT Kanpur
+                </span>
+            </h5>
+            <p style="margin-left: 10px; font-size: 15px;">Kanpur, U.P.</p>
+        </div>
+        <div fxFlex="25%" fxLayoutAlign='center center' fxLayout='column' fxFlex.lt-md='33%' fxFlex.lt-sm="33%"
+            class=" ctopspacing">
+            <img src="assets/images/Lpulogo100 1.png">
+            <h5><span class="textcolor">Lovely Professional
+                    <span style="margin-left: 20px;">Uinversity </span>
+                </span></h5>
+            <p style="margin-left: 10px; font-size: 15px;">Jalandhar, Punjab</p>
+        </div>
+        <div fxFlex="25%" fxLayoutAlign='center center' fxLayout='column' fxFlex.lt-md='33%' fxFlex.lt-sm="33%"
+            class=" ctopspacing">
+            <img src="assets/images/Osmania_University_Logo100 1.png">
+            <h5><span class="textcolor">Osmania University
+                </span></h5>
+            <p style="margin-left: 10px; font-size: 15px;">Hyderabad,Telangana<br>
+                <span style="margin-left: 20px;">Uinversity </span>
+            </p>
+        </div>
+        <div fxFlex="25%" fxLayoutAlign='center center' fxLayout='column' fxFlex.lt-md='33%' fxFlex.lt-sm="33%"
+            class=" ctopspacing">
+            <img src="assets/images/Moti100 1.png">
+            <h5><span class="textcolor">Motihari College<br>
+                    of Engineering
+                </span></h5>
+            <p style="margin-left: 10px; font-size: 15px;">Motihari,Bihar</p>
+        </div>
+    </div>
+   
+
 
 </section>

@@ -66,6 +66,14 @@ export class HomeComponent implements OnInit {
       }
   }
   
+
+  graphOptions: OwlOptions = {
+    loop:true,
+    margin:10,
+    dots:true,
+    items:1
+  }
+
   categoriesOptions: any = {
     
     navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
