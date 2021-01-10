@@ -16,6 +16,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HeaderComponent } from './header/header.component';
 import { LayoutComponent } from './layout.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [MatCheckboxModule, MatSidenavModule,MatDividerModule,
@@ -23,7 +24,8 @@ import { LayoutComponent } from './layout.component';
     MatButtonModule, MatIconModule, FlexLayoutModule,MatMenuModule],
   exports: [MatCheckboxModule,
     MatButtonModule, MatSidenavModule,MatExpansionModule,MatCardModule,MatMenuModule,
-    MatToolbarModule, MatIconModule,MatListModule,FlexLayoutModule,MatDividerModule]
+    MatToolbarModule, MatIconModule,MatListModule,FlexLayoutModule,MatDividerModule],
+  declarations: []
 })
 
 export class MaterialModule {
@@ -32,9 +34,10 @@ export class MaterialModule {
 
 
 @NgModule({
-  declarations: [ HomeComponent,HeaderComponent,LayoutComponent],
+  declarations: [FooterComponent, HomeComponent,HeaderComponent,LayoutComponent],
   imports: [
     CommonModule,
+    
     CarouselModule,
     LayoutRoutingModule,
     MaterialModule

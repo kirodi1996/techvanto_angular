@@ -8,6 +8,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 export class HomeComponent implements OnInit {
   @ViewChild('carousel') carousel:any;
   movies : Object[] = []
+  expanded:boolean=false;
   slides : Array<Object> = []
   options : Object = {
     clicking: true,
@@ -93,9 +94,6 @@ export class HomeComponent implements OnInit {
      
     ]
   }
-
-
-
   slideClicked (index) {
     this.carousel.slideClicked(index)
    }
